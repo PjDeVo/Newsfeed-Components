@@ -159,10 +159,10 @@ createArticle = function(data) {
   //   }
   // });
   button.addEventListener("click", () => {
-    if (button.classList.contains("article-open")) {
-      button.classList.remove("article-open");
+    if (article.classList.contains("article-open")) {
+      article.classList.remove("article-open");
     } else if (button.classList != "article-open") {
-      button.classList.add("article-open");
+      article.classList.add("article-open");
     }
   });
   article.appendChild(articleTitle);

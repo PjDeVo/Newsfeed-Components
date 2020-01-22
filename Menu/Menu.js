@@ -55,13 +55,12 @@ let newsFeedButton = document.querySelector(".menu-button");
 console.log(newsFeedButton);
 
 newsFeedButton.addEventListener("click", () => {
-  if (menu.classList.contains("menu--open")) {
-    menu.classList.remove("menu--open");
-  } else if (menu.classList != "menu--open") {
-    menu.classList.add("menu--open");
+  if (mainMenu.classList.contains("menu--open")) {
+    mainMenu.classList.remove("menu--open");
+  } else if (mainMenu.classList != "menu--open") {
+    mainMenu.classList.add("menu--open");
   }
 });
 
-let menu = createMenu(menuItems);
-document.querySelector("body").appendChild(menu);
-console.log(menu);
+let mainMenu = createMenu(menuItems);
+document.querySelector("body").appendChild(mainMenu);

@@ -35,30 +35,30 @@ let menuItems = [
 */
 
 createMenu = function(stuff) {
-  let container = document.createElement("div");
+  let menu = document.createElement("div");
 
-  container.classList.add("menu");
+  menu.classList.add("menu");
 
   let containerList = document.createElement("ul");
 
-  container.appendChild(containerList);
+  menu.appendChild(containerList);
 
   stuff.forEach(item => {
     let listItem = document.createElement("li");
     listItem.textContent = item;
     containerList.appendChild(listItem);
   });
-  return container;
+  return menu;
 };
 
 let newsFeedButton = document.querySelector(".menu-button");
 console.log(newsFeedButton);
 
 newsFeedButton.addEventListener("click", () => {
-  if (newsFeedButton.classList.contains("menu--open")) {
-    newsFeedButton.classList.remove("menu--open");
-  } else if (newsFeedButton.classList != "menu--open") {
-    newsFeedButton.classList.add("menu--open");
+  if (menu.classList.contains("menu--open")) {
+    menu.classList.remove("menu--open");
+  } else if (menu.classList != "menu--open") {
+    menu.classList.add("menu--open");
   }
 });
 
